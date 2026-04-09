@@ -2,6 +2,8 @@ const productTiers = [
   {
     name: "Starter Kit",
     price: "$29",
+    href: "https://buy.stripe.com/STARTER_PLACEHOLDER",
+    featured: false,
     summary: "A clean setup guide for getting OpenClaw running without drowning in docs.",
     bullets: [
       "Step-by-step setup guide",
@@ -12,6 +14,8 @@ const productTiers = [
   {
     name: "Operator Pack",
     price: "$59",
+    href: "https://buy.stripe.com/OPERATOR_PLACEHOLDER",
+    featured: true,
     summary: "The setup guide plus templates, workflow examples, and troubleshooting assets.",
     bullets: [
       "Everything in Starter",
@@ -22,6 +26,8 @@ const productTiers = [
   {
     name: "Full Setup Kit",
     price: "$99",
+    href: "https://buy.stripe.com/FULL_KIT_PLACEHOLDER",
+    featured: false,
     summary: "The complete async package for people who want a serious running start with less trial and error.",
     bullets: [
       "Everything in Operator Pack",
@@ -160,11 +166,14 @@ export default function Home() {
         <section id="pricing" className="mt-20">
           <h2 className="text-3xl font-semibold tracking-tight">Pricing</h2>
           <p className="mt-3 max-w-2xl text-zinc-300">
-            Start cheap, prove the demand, and make the async product good enough that it actually saves people time.
+            Pick the tier that matches how deep you want to go. Every option gets you closer to a working setup, faster.
           </p>
           <div className="mt-8 grid gap-6 lg:grid-cols-3">
             {productTiers.map((tier) => (
-              <article key={tier.name} className="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <article key={tier.name} className={`rounded-3xl border p-6 flex flex-col ${tier.featured ? "border-emerald-400/40 bg-emerald-400/10 ring-1 ring-emerald-400/20" : "border-white/10 bg-white/5"}`}>
+                {tier.featured && (
+                  <p className="mb-3 inline-flex self-start rounded-full bg-emerald-400/20 px-3 py-0.5 text-xs font-medium text-emerald-300">Most popular</p>
+                )}
                 <p className="text-sm text-zinc-400">{tier.name}</p>
                 <div className="mt-3 flex items-end gap-3">
                   <span className="text-4xl font-semibold">{tier.price}</span>
@@ -175,6 +184,12 @@ export default function Home() {
                     <li key={bullet}>• {bullet}</li>
                   ))}
                 </ul>
+                <a
+                  href={tier.href}
+                  className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition ${tier.featured ? "bg-emerald-300 text-zinc-950 hover:bg-emerald-200" : "bg-white text-zinc-950 hover:bg-zinc-200"}`}
+                >
+                  Buy now
+                </a>
               </article>
             ))}
           </div>
@@ -261,27 +276,42 @@ export default function Home() {
         <section id="buy" className="mt-20 rounded-3xl border border-white/10 bg-emerald-400/10 p-8">
           <h2 className="text-3xl font-semibold tracking-tight">Get the OpenClaw Setup Kit</h2>
           <p className="mt-3 max-w-2xl text-zinc-200">
-            This is the product-first version of the offer: a live page, a clear async product, and a direct path to purchase once checkout is wired in.
+            Choose the tier that fits your needs. You will get instant access to the materials so you can start setting up right away.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
-              href="mailto:hello@example.com?subject=OpenClaw%20Setup%20Kit"
-              className="inline-flex items-center justify-center rounded-full bg-emerald-300 px-6 py-3 font-medium text-zinc-950 transition hover:bg-emerald-200"
-            >
-              Request early access
-            </a>
-            <a
-              href="#pricing"
+              href="https://buy.stripe.com/STARTER_PLACEHOLDER"
               className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
             >
-              Compare tiers
+              Starter Kit — $29
+            </a>
+            <a
+              href="https://buy.stripe.com/OPERATOR_PLACEHOLDER"
+              className="inline-flex items-center justify-center rounded-full bg-emerald-300 px-6 py-3 font-medium text-zinc-950 transition hover:bg-emerald-200"
+            >
+              Operator Pack — $59
+            </a>
+            <a
+              href="https://buy.stripe.com/FULL_KIT_PLACEHOLDER"
+              className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
+            >
+              Full Setup Kit — $99
             </a>
           </div>
           <p className="mt-4 text-sm text-zinc-300">
-            Next layer is wiring this into a real checkout + delivery flow so the kit can be bought without needing a live conversation.
+            Questions? Reach out at{" "}
+            <a href="mailto:jonathenadkins@gmail.com" className="underline hover:text-white">jonathenadkins@gmail.com</a>
           </p>
         </section>
       </section>
+
+      <footer className="border-t border-white/10 bg-zinc-950 px-6 py-8 text-center text-sm text-zinc-400">
+        <p>© {new Date().getFullYear()} OpenClaw Setup Kit. All rights reserved.</p>
+        <p className="mt-2">
+          Contact:{" "}
+          <a href="mailto:jonathenadkins@gmail.com" className="underline hover:text-white">jonathenadkins@gmail.com</a>
+        </p>
+      </footer>
     </main>
   );
 }
