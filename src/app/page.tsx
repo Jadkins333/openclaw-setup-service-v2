@@ -61,6 +61,28 @@ const faqs = [
   },
 ];
 
+const outcomes = [
+  "A working OpenClaw environment on your actual machine",
+  "Cleaner model, routing, and permission choices",
+  "Fewer dead ends around pairing and tool access",
+  "A repeatable setup you can keep using after the call",
+];
+
+const objections = [
+  {
+    title: "You don’t need more tutorials.",
+    copy: "You need the stack running in your environment, with your accounts, in a way that survives the next restart.",
+  },
+  {
+    title: "This is not generic AI consulting.",
+    copy: "It is practical setup, debugging, routing, and operational help aimed at getting OpenClaw usable fast.",
+  },
+  {
+    title: "The first version is intentionally simple.",
+    copy: "Short sales page, clear offer, and a direct booking path beats waiting months for a perfect funnel.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-50">
@@ -122,6 +144,13 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-8 rounded-2xl border border-emerald-300/20 bg-emerald-300/10 p-4">
+              <p className="text-sm font-medium text-emerald-200">Founding offer</p>
+              <p className="mt-2 text-sm leading-6 text-zinc-200">
+                Start with the smallest engagement that gets your system out of “maybe later” mode and into a working setup you can actually use.
+              </p>
+            </div>
           </aside>
         </div>
 
@@ -188,6 +217,32 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mt-20 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h2 className="text-3xl font-semibold tracking-tight">What success looks like</h2>
+            <ul className="mt-6 space-y-3 text-zinc-200">
+              {outcomes.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h2 className="text-3xl font-semibold tracking-tight">Why this offer is different</h2>
+            <div className="mt-6 space-y-4">
+              {objections.map((item) => (
+                <div key={item.title} className="rounded-2xl border border-white/10 bg-black/20 p-4">
+                  <h3 className="font-medium text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-300">{item.copy}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="mt-20">
           <h2 className="text-3xl font-semibold tracking-tight">FAQ</h2>
           <div className="mt-8 grid gap-4">
@@ -203,14 +258,14 @@ export default function Home() {
         <section id="contact" className="mt-20 rounded-3xl border border-white/10 bg-emerald-400/10 p-8">
           <h2 className="text-3xl font-semibold tracking-tight">Want help getting your setup live?</h2>
           <p className="mt-3 max-w-2xl text-zinc-200">
-            This is the first-dollar version: short sales page, clear packages, Stripe checkout, and a simple intake flow. Next step is swapping these placeholders for a real booking link and payment flow.
+            This is the first real version of the offer: a live page, clear packages, and a direct path for people to raise their hand. Next layer is wiring in an intake form and a payment path.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
               href="mailto:hello@example.com?subject=OpenClaw%20Setup%20Inquiry"
               className="inline-flex items-center justify-center rounded-full bg-emerald-300 px-6 py-3 font-medium text-zinc-950 transition hover:bg-emerald-200"
             >
-              Email to book
+              Book by email
             </a>
             <a
               href="#packages"
@@ -219,6 +274,9 @@ export default function Home() {
               Compare packages
             </a>
           </div>
+          <p className="mt-4 text-sm text-zinc-300">
+            If you’re stuck on setup, routing, permissions, or pairing, send the current state and the blocker. We’ll scope the fastest path to working.
+          </p>
         </section>
       </section>
     </main>
