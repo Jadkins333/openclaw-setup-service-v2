@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OpenClaw Setup Service",
-  description: "White-glove OpenClaw setup and training for builders and small teams.",
+  title: "OpenClaw Setup Kit",
+  description: "A productized guide, templates, and troubleshooting kit for getting OpenClaw running with less friction.",
 };
 
 export default function RootLayout({
