@@ -2,7 +2,7 @@ const productTiers = [
   {
     name: "Starter Kit",
     price: "$29",
-    href: "https://buy.stripe.com/STARTER_PLACEHOLDER",
+    href: "https://buy.stripe.com/cNi00la1VakzgyTeyibMQ03",
     featured: false,
     summary: "A clean setup guide for getting OpenClaw running without drowning in docs.",
     bullets: [
@@ -14,7 +14,7 @@ const productTiers = [
   {
     name: "Operator Pack",
     price: "$59",
-    href: "https://buy.stripe.com/OPERATOR_PLACEHOLDER",
+    href: "https://buy.stripe.com/00weVf1vp0JZeqLfCmbMQ04",
     featured: true,
     summary: "The setup guide plus templates, workflow examples, and troubleshooting assets.",
     bullets: [
@@ -26,7 +26,7 @@ const productTiers = [
   {
     name: "Full Setup Kit",
     price: "$99",
-    href: "https://buy.stripe.com/FULL_KIT_PLACEHOLDER",
+    href: "https://buy.stripe.com/aFa28t1vp50fbez0HsbMQ05",
     featured: false,
     summary: "The complete async package for people who want a serious running start with less trial and error.",
     bullets: [
@@ -280,19 +280,19 @@ export default function Home() {
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
-              href="https://buy.stripe.com/STARTER_PLACEHOLDER"
+              href="https://buy.stripe.com/cNi00la1VakzgyTeyibMQ03"
               className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
             >
               Starter Kit — $29
             </a>
             <a
-              href="https://buy.stripe.com/OPERATOR_PLACEHOLDER"
+              href="https://buy.stripe.com/00weVf1vp0JZeqLfCmbMQ04"
               className="inline-flex items-center justify-center rounded-full bg-emerald-300 px-6 py-3 font-medium text-zinc-950 transition hover:bg-emerald-200"
             >
               Operator Pack — $59
             </a>
             <a
-              href="https://buy.stripe.com/FULL_KIT_PLACEHOLDER"
+              href="https://buy.stripe.com/aFa28t1vp50fbez0HsbMQ05"
               className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
             >
               Full Setup Kit — $99
