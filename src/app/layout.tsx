@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+// import { Analytics } from "@vercel/analytics/next"; // disabled for GH Pages deploy
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OpenClaw Setup Kit",
     description: "A practical setup kit for getting OpenClaw running without drowning in docs.",
-    url: "https://openclaw-setup-service-v2.vercel.app",
+    url: "https://jadkins333.github.io/openclaw-setup-service-v2",
     siteName: "OpenClaw Setup Kit",
     type: "website",
   },
@@ -40,9 +40,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script defer data-domain="jadkins333.github.io" src="https://plausible.io/js/script.js" />
+      </head>
       <body className="min-h-full flex flex-col">
         {children}
-        <Analytics />
       </body>
     </html>
   );
