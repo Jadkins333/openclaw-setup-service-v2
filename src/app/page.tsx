@@ -128,6 +128,12 @@ export default function Home() {
               >
                 Get the kit
               </a>
+              <a
+                href="/openclaw-setup-service-v2/guide/"
+                className="inline-flex items-center justify-center rounded-full border border-emerald-400/25 bg-emerald-400/10 px-6 py-3 font-medium text-emerald-200 transition hover:bg-emerald-400/20"
+              >
+                Free quickstart guide →
+              </a>
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
