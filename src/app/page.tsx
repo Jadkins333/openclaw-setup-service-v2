@@ -129,10 +129,10 @@ export default function Home() {
                 Get the kit
               </a>
               <a
-                href="/openclaw-setup-service-v2/guide/"
+                href="mailto:jonathenadkins@gmail.com?subject=OpenClaw%20Setup%20Kit%20question"
                 className="inline-flex items-center justify-center rounded-full border border-emerald-400/25 bg-emerald-400/10 px-6 py-3 font-medium text-emerald-200 transition hover:bg-emerald-400/20"
               >
-                Free quickstart guide →
+                Questions before buying? Email me →
               </a>
             </div>
 
@@ -282,7 +282,7 @@ export default function Home() {
         <section id="buy" className="mt-20 rounded-3xl border border-white/10 bg-emerald-400/10 p-8">
           <h2 className="text-3xl font-semibold tracking-tight">Get the OpenClaw Setup Kit</h2>
           <p className="mt-3 max-w-2xl text-zinc-200">
-            Choose the tier that fits your needs. You will get instant access to the materials so you can start setting up right away.
+            Delivery is manual by email within 24 hours of payment confirmation, sent from jonathenadkins@gmail.com to the address Stripe captures at checkout. Reply if you need it faster than 24 hours and I will prioritize.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
