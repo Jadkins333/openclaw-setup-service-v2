@@ -129,7 +129,7 @@ export default function Home() {
                 Get the kit
               </a>
               <a
-                href="mailto:jonathenadkins@gmail.com?subject=OpenClaw%20Setup%20Kit%20question"
+                href="mailto:jasper@jasperreed.co?subject=OpenClaw%20Setup%20Kit%20question"
                 className="inline-flex items-center justify-center rounded-full border border-emerald-400/25 bg-emerald-400/10 px-6 py-3 font-medium text-emerald-200 transition hover:bg-emerald-400/20"
               >
                 Questions before buying? Email me →
@@ -282,7 +282,7 @@ export default function Home() {
         <section id="buy" className="mt-20 rounded-3xl border border-white/10 bg-emerald-400/10 p-8">
           <h2 className="text-3xl font-semibold tracking-tight">Get the OpenClaw Setup Kit</h2>
           <p className="mt-3 max-w-2xl text-zinc-200">
-            Delivery is manual by email within 24 hours of payment confirmation, sent from jonathenadkins@gmail.com to the address Stripe captures at checkout. Reply if you need it faster than 24 hours and I will prioritize.
+            Delivery is manual by email within 24 hours of payment confirmation, sent from jasper@jasperreed.co to the address Stripe captures at checkout. Reply if you need it faster than 24 hours and I will prioritize.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
@@ -306,7 +306,7 @@ export default function Home() {
           </div>
           <p className="mt-4 text-sm text-zinc-300">
             Questions? Reach out at{" "}
-            <a href="mailto:jonathenadkins@gmail.com" className="underline hover:text-white">jonathenadkins@gmail.com</a>
+            <a href="mailto:jasper@jasperreed.co" className="underline hover:text-white">jasper@jasperreed.co</a>
           </p>
         </section>
       </section>
@@ -315,7 +315,7 @@ export default function Home() {
         <p>© {new Date().getFullYear()} OpenClaw Setup Kit. All rights reserved.</p>
         <p className="mt-2">
           Contact:{" "}
-          <a href="mailto:jonathenadkins@gmail.com" className="underline hover:text-white">jonathenadkins@gmail.com</a>
+          <a href="mailto:jasper@jasperreed.co" className="underline hover:text-white">jasper@jasperreed.co</a>
         </p>
       </footer>
     </main>

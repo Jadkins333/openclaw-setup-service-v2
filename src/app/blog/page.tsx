@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "5 Common OpenClaw Setup Mistakes (2026)",
     description:
       "Fix the setup issues that trip up most OpenClaw users. Node versions, API keys, channel config, and more.",
-    url: "https://jadkins333.github.io/openclaw-setup-service-v2/blog/",
+    url: "https://jasperreed.co/openclaw-setup-kit/blog/",
     siteName: "OpenClaw Setup Kit",
     type: "article",
   },

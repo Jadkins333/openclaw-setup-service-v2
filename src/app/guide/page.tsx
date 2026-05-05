@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "Free OpenClaw Setup Quickstart Guide (2026)",
     description:
       "Skip the trial and error. A practical quickstart for getting OpenClaw installed and useful.",
-    url: "https://jadkins333.github.io/openclaw-setup-service-v2/guide/",
+    url: "https://jasperreed.co/openclaw-setup-kit/guide/",
     siteName: "OpenClaw Setup Kit",
     type: "article",
   },
